@@ -1,0 +1,17 @@
+.car
+{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: ca;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+   
+
+}
+@keyframes ca {
+    0%  { left:0px; top:0px;}
+    100% {left:800px; top:0px;}
+    
+}
+
