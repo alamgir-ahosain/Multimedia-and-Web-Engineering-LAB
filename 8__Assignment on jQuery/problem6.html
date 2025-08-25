@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$(document).ready(function() {
+  // Initialize the datepicker
+  $("#datepicker").datepicker({
+    dateFormat: 'yy-mm-dd', // Change date format as needed
+    onSelect: function(dateText) {
+      // Handle date selection here
+      console.log("Selected date: " + dateText);
+    }
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Select  Date: <input type="text" id="datepicker"></p>
+
+</body>
+</html>

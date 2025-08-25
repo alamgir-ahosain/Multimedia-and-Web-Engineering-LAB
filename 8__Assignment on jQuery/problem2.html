@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disable Submit Button</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const submitButton = document.getElementById("submitBtn");
+        const checkbox = document.getElementById("checkBox");
+
+        checkbox.addEventListener("change", function () {
+          if (this.checked) {
+            submitButton.disabled = false;
+          } else {
+            submitButton.disabled = true;
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="checkbox" id="checkBox" /> I agree to the terms and
+      conditions<br />
+      <button type="submit" id="submitBtn" disabled>Submit</button>
+    </form>
+  </body>
+</html>

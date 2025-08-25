@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var text = document.getElementById("myTextarea");
+            var result = document.getElementById("charCount");
+            var limit = 60;
+
+            result.textContent = text.value.length + "/" + limit;
+
+            text.addEventListener("input", function() {
+                var textlength = text.value.length;
+                result.textContent = textlength + "/" + limit;
+                if(textlength>limit){
+                    text.style.borderColor="#ff2851";
+                    result.style.color="#ff2851";
+                }
+                else{
+                    text.style.borderColor="#b2b2b2";
+                    result.style.color="#737273";
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <textarea id="myTextarea" rows="4" cols="50" placeholder="Type Something Here"></textarea>
+    <p id="charCount"></p>
+</body>
+</html>

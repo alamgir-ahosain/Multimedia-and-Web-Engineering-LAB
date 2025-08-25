@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Define the options for the first list box
+        var firstOptions = {
+          Fruit: ["Apple", "Banana", "Orange"],
+          Vegetable: ["Carrot", "Lettuce", "Tomato"],
+          Grain: ["Rice", "Wheat", "Barley"],
+        };
+
+        // Populate the first list box
+        $.each(firstOptions, function (key, value) {
+          $("#firstListBox").append($("<option>").text(key).attr("value", key));
+        });
+
+        // Populate the second list box based on the selection in the first list box
+        $("#firstListBox").change(function () {
+          var selectedOption = $(this).val();
+          var options = firstOptions[selectedOption];
+
+          // Clear the second list box and populate with new options
+          $("#secondListBox").empty();
+          $.each(options, function (index, value) {
+            $("#secondListBox").append(
+              $("<option>").text(value).attr("value", value)
+            );
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <select id="firstListBox">
+      <option value="">Select Category</option>
+    </select>
+
+    <select id="secondListBox">
+      <option value="">Select Item</option>
+    </select>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulate Select Box with jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var selectBox = $("#mySelect");
+
+            // Remove all existing options
+            selectBox.empty();
+
+            // Add a new option
+            selectBox.append($('<option>', {
+                value: 'value1',  // Set the value attribute
+                text: 'Option 1', // Set the text content
+
+               
+            }));
+
+            // Select the newly added option
+            selectBox.val('value1');
+        });
+    </script>
+</head>
+<body>
+    <select id="mySelect"></select>
+</body>
+</html>

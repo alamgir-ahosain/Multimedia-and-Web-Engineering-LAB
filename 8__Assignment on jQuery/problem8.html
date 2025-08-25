@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <title> 
+        How to make first word bold 
+        of all elements using jQuery? 
+    </title> 
+  
+    <!-- Import jQuery cdn library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script> 
+  
+    <script> 
+        $(document).ready(function () { 
+            $("p").each(function () { 
+                var txt = $(this); 
+                txt.html(txt.text() 
+                .replace(/^\w+/, '<strong>$&</strong>')); 
+            }); 
+        }); 
+    </script> 
+</head> 
+  
+<body style="text-align: center;"> 
+   
+  
+    <h3> 
+        How to make first word bold of 
+        all elements using jQuery? 
+    </h3> 
+      
+    <p>GFG is a computer science portal</p> 
+    <p>Computer Science Portal</p> 
+</body> 
+  
+</html>
