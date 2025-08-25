@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Create Your Own Account</title>
+<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+<script src="registration-form-validation.js"></script>
+<!-- <style src="form-style.css" type="text/css"> </style> -->
+ <link rel = "stylesheet"
+   type = "text/css"
+   href = "form-style.css" />  
+</head>
+
+<body onload="firstfocus();">
+
+<div class="registration">
+<h1>Sign Up Now!<span>Sign up and share your experience!</span></h1>
+
+
+<form name='registration' onSubmit="return formValidation();">
+    <div class="section"><span>1</span>Name &amp; Address</div>
+    <div class="inner-wrap">
+        <label>Your Full Name <span style="color:red;font-size:19px">*</span><input type="text" name="username" onchange = "allLetter_onchange(8,3)"/></label>
+        <label>Address <span style="color:red;font-size:19px">*</span><textarea name="address" onchange = "alphanumeric_onchange()"></textarea></label>
+    </div>
+
+    <div class="section"><span>2</span>Email &amp; Phone</div>
+    <div class="inner-wrap">
+        <label>Email Address <span style="color:red;font-size:19px">*</span><input type="email" name="email" onchange = "validateEmail_onchange()"/></label>
+        <label>Phone Number <span style="color:red;font-size:19px">*</span><input type="text" name="phone" onchange = "validatePhone_onchange()"/></label>
+    </div>
+
+    <div class="section"><span>3</span>UserName & Passwords</div>
+        <div class="inner-wrap">
+		<label>User Name <span style="color:red;font-size:19px">*</span><input type="text" name="userid" onchange="userid_validation_onchange(12,5)"/></label>
+        <label>Password <span style="color:red;font-size:19px">*</span><input type="password" name="passid" id="passid" onchange="passid_validation_onchange(12,7)"/></label>
+        <label>Confirm Password <span style="color:red;font-size:19px">*</span><input type="password" name="conpassid" id="conpassid" onchange="check()"/></label>
+    </div>
+	
+	<div class="section"><span>4</span>Category</div>
+	<div class="inner-wrap">
+		<label for="field8"><span>Subject</span><select name="subject" class="select-field">
+		<option selected="" value="Default">(Please select a category)</option>
+		<option value="Assignment">Assignment</option>
+		<option value="Lab Test">Lab Test</option>
+		<option value="Mid Term">Mid Term</option>
+		<option value="Final Exam">Final Exam</option>
+		</select></label>
+		<label for="field9"><span>Country</span><select name="country" class="select-field">
+		<option selected="" value="Default">(Please select a country)</option>
+		<option value="Bangladesh">Bangladesh</option>
+		<option value="Australia">Australia</option>
+		<option value="France">France</option>
+		<option value="Germany">Germany</option>
+		</select></label>
+	</div>
+	
+	<div class="section"><span>5</span>Information</div>
+    <div class="inner-wrap">
+		<label>Zip Code <span style="color:red;font-size:19px">*</span><input type="text" name="zip" /></label>
+		<label for="field11"><span>Sex </span>
+		<input type="radio" name="msex" value="Male" /><span>Male</span>
+		<input type="radio" name="fsex" value="Female" /><span>Female</span>
+		<label for="field12"><span>Language </span>
+		<input type="checkbox" name="en" value="en" checked /><span>English</span>
+		<input type="checkbox" name="nonen" value="noen" /><span>Non English</span>
+    </div>
+	
+	<div class="section"><span>6</span>Message</div>
+	<div class="inner-wrap">
+		<label for="field13"><span>Message</span><textarea name="message" class="textarea-field">Optional!</textarea></label>
+	</div>
+	
+    <div class="button-section">
+     <input type="submit" name="Sign Up" />
+     <span class="privacy-policy">
+     <input type="checkbox" name="field14">You agree to the Terms and Policy. 
+     </span>
+    </div>
+</form>
+</div>
+
+</body>
+</html>
