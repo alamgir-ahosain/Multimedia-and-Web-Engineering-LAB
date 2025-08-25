@@ -1,1 +1,1 @@
-A collection of lab tasks and the final project from the Multimedia and Web Engineering course (3rd Year, 1st Semester) at [MBSTU](https://mbstu.ac.bd/).
+A collection of lab tasks and the final project from the Multimedia and Web Engineering course (`3rd Year, 1st Semester`) at [MBSTU](https://mbstu.ac.bd/).
