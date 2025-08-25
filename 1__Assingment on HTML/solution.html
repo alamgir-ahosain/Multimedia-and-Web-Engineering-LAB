@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <style>
+        body { background-color:lightblue; }
+
+         input
+         {
+            padding: 10px;
+            border: none;
+            margin-bottom: 10px;
+        }
+    </style>
+    
+    </head>
+    <body>
+        <h2 style="text-align: center;">Student Registration Form</h2>
+        <hr style="background-color: white; height: 1px; border: 1px solid white;">
+
+       <form>
+
+        <div>
+            <br><label for="Firstname" > Firstname :</label><br>
+            <input type="text" name="Firstname" id="Firstname" placeholder="Firstname" style="width: 99%;">
+        </div>
+        <div>
+           <br> <label for="Middlename"> Middlename :</label><br>
+            <input type="text"  name="Middlename" id="Middlename"placeholder="Middlename" style="width: 99%;" >
+        </div>
+        <div>
+           <br> <label for="Lastname"> Lastname :</label><br>
+            <input type="text" name="Lastname" id="Lastname" placeholder="Lastname"  style="width:99%;">
+        </div>
+        <div>
+           <br> <label for="Course">Course :</label><break>
+                <select name="Course" id="Course">
+                    <option value="" disabled selected>Select Course</option>
+                    <option values="Software Engineering">SoftwareEngineering</option>
+                    <option value="Operating System">Operating System</option>
+                </select>
+        </div>
+        <div>
+           <br>
+           <label for="gender">Gender :</label><br>
+            <input type="radio"  name="gender" id="gender" value="male" >male
+            <input type="radio"  name="gender" id="gender" value="female">female
+
+        </div>
+        <div>
+           <br> <label>Phone :</label><br>
+            <input type="tel"  value="+880">
+        </div>
+        <div>
+           <br> <label>Current Address: </label><br>
+            <textarea  name="message" rows="5" cols="20" style="width: 99%;"></textarea>
+        </div>
+
+        <div>
+          <br>  <label for="email">Email:</label><br>
+            <input tpye="mail"  name="email" id="Password" placeholder="Enter email" style="width: 99%;">
+
+        </div>
+        <div>
+         <br>   <label for="placeholder">Password :</label><br>
+            <input type="text"   name="placeholder" id="placeholder" placeholder="Enter Password" style="width: 99%;">
+        </div>
+
+        <div>
+            <br><label for="Password">Re type Password :</label><br>
+            <input type="text" name="Password" id="Password"  placeholder="Retype  Password" style="width: 99%;">
+        </div>
+        <br>
+        <input type="button" value="Register" style="background-color:#56b35f;color: white; width:99%;height: 50px;">
+        
+
+
+
+
+       </form>
+    </body>
+</html>
