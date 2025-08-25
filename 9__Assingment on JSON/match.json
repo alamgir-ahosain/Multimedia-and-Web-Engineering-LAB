@@ -1,0 +1,37 @@
+ {
+    "Match": [
+      {
+        "MatchType": "SemiFinal",
+        "Date": "14/12/2022",
+        "ParticipatedCountry": "Spain 2-1 Brazil",
+        "ManoftheMatch": "Sergio Busquets"
+      },
+      {
+        "MatchType": "SemiFinal",
+        "Date": "15/12/2022",
+        "ParticipatedCountries": {
+          "ParticipatedCountry": [
+            "Argentina",
+            "France"
+          ],
+          "results": {
+            "result": {
+              "Argentina": 1,
+              "France": 1
+            },
+            "tribreaker": {
+              "Argentina": 3,
+              "France": 4
+            }
+          }
+        },
+        "ManoftheMatch": "Lionel Messi"
+      },
+      {
+        "MatchType": "SemiFinal",
+        "Date": "18/12/2022",
+        "ParticipatedCountry": "Argentina 1-0 Spain",
+        "ManoftheMatch": "Lionel Messi"
+      }
+    ]
+  }

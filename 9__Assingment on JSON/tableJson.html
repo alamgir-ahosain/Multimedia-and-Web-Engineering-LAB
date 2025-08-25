@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Table with JSON</title>
+    <script language="javascript">
+      document.writeln("<h2>JSON array object</h2>");
+      var Match = {
+        Pascal: [
+          {
+            MatchType: "SemiFinal",
+            Date: "14/12/2022",
+            ParticipatedCountry: "Spain 2-1 Brazil",
+            ManoftheMatch: "Sergio Busquets",
+          },
+        ],
+        Scala: [
+          {
+            MatchType: "SemiFinal",
+            Date: "15/12/2022",
+            ParticipatedCountries: {
+              ParticipatedCountry: ["Argentina", "France"],
+              results: {
+                result: {
+                  Argentina: 1,
+                  France: 1,
+                },
+              },
+            },
+            ManoftheMatch: "Lionel Messi",
+          },
+          {
+            MatchType: "SemiFinal",
+            Date: "18/12/2022",
+            ParticipatedCountry: "Argentina 1-0 Spain",
+            ManoftheMatch: "Lionel Messi",
+          },
+        ],
+      };
+      var i = 0;
+      document.writeln("<table border = '4'><tr>");
+        document.writeln("<th><td><b>Match Type</b></td></th>");
+        document.writeln("<th><td> <b>Date</b></td></th>");
+        document.writeln("<th><td><b> Particated Coubtry</b></td></th>");
+        document.writeln("<th><td><span><b>Man of the Match</b></span> </td></th>");
+
+
+         
+      for (i = 0; i < Match.Pascal.length; i++) {
+        
+
+        document.writeln(
+          "<tr><td><b></b></td><td width = 50>" +
+            Match.Pascal[i].MatchType+
+            "</td></tr>"
+        );
+        document.writeln(
+          "<tr><tr></tr>" +
+            Match.Pascal[i].Date+
+            "</td></tr>"
+        );
+    
+       
+      }
+      document.writeln("</tr></table>");
+    </script>
+  </head>
+  <body></body>
+</html>
